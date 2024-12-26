@@ -1,0 +1,67 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id         Int       @id @default(autoincrement())
+  email      String    @unique
+  name       String
+  role       Role      @default(USER)
+  status     Status    @default(NOT_REGISTER)
+  meetLink   String    @default("wait")
+  datePicker DateTime  @default(dbgenerated("'2024-08-13 00:00:00'"))
+  userData   UserData?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model UserData {
+  userId            Int      @unique //FullName Email
+  user              User     @relation(fields: [userId], references: [id]) //Student ID
+  lineID            String   @default("")
+  program           String   @default("")
+  academicYear      String   @default("")
+  degree            String   @default("")
+  campus            String   @default("")
+  clubRole          String   @default("")
+  whyJoinClub       String   @default("") @db.LongText
+  afterBetterClub   String   @default("") @db.LongText
+  portfolio         String   @default("")
+  interviewLocation String   @default("")
+  phoneNumber       String   @default("")
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+}
+
+model BlogData {
+  id         Int      @id @default(autoincrement())
+  content    String   @unique
+  title      String   @default("")
+  desc       String   @db.LongText
+  poster     String   @default("")
+  image      String   @default("")
+  type       String   @default("")
+  datePicker DateTime @default(dbgenerated("'2024-08-13 00:00:00'"))
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+}
+
+enum Role {
+  USER
+  ADMIN
+}
+
+enum Status {
+  SUCCESS
+  WAITING
+  REJECT
+  NOT_REGISTER
+  PASS
+  NOT_PASS
+}
