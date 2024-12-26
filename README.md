@@ -1,32 +1,21 @@
-# SIIT-OrcaBOT
-This Website for SIIT Academy Club - OrcaBot for  Register for join club. <br>
-SITE : https://orcabot.in.th
+MIT License
 
-# Frontend Using
-By. @PPekKunGz
-- NextJS(Framework) v14
-- TailwindCSS
-- Typescript
-#### Library
-- NextAuth
-- ShadCN/UI
-- ReactIcons
-- Zod
-- Swiper
-- etc.
+Copyright (c) 2024 PPekKunGzDev
 
-# Backend Using
-By. @MCKimKunG
-- NodeJS
-- Fastify
-- PrismaORM
-- Bcryptjs
-- Buffer-image-size
-- Jsonwebtoken
-- Typescript
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-## Authors / Developer
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-- [@PPekKunGzDev](https://ppekkungz.in.th)
-- [@MCKimKunG](https://mckimkung.in.th)
-- [@Author SIIT](https://github.com/loqqvEe)
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
